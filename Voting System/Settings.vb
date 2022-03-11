@@ -252,4 +252,14 @@ Public Class Settings
             AuditTrail(ex.ToString)
         End Try
     End Sub
+
+    Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
+        Try
+            Loading.Show()
+            Close()
+
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
 End Class
